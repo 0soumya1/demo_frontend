@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const App = ()=>{
   const[flowers, setFlowers]= useState("");
 
-  // const url="backend-smoky-eight.vercel.app";
+  // const url="https://backend-smoky-eight.vercel.app/";
 
   const getFlowers = async ()=>{
     
