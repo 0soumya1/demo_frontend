@@ -3,11 +3,12 @@ import React, { useState } from "react";
 const App = ()=>{
   const[flowers, setFlowers]= useState("");
 
-  // const url="https://backend-smoky-eight.vercel.app/";
+  const url="https://backend-smoky-eight.vercel.app/";
+  // const url1 = "http://localhost:5000/"
 
   const getFlowers = async ()=>{
     
-        let result = await fetch("http://localhost:5000/flowers");
+        let result = await fetch(url+"flowers");
         result = await result.json();
        setFlowers(result);
   }
