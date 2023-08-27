@@ -16,8 +16,10 @@ const App = ()=>{
   return(
      <div>
       <h2>dummy</h2>
-      {
-     flowers.map((item)=>{
+
+      <button onClick={()=>getFlowers()}>Submit</button>
+    {
+     flowers&&flowers.map((item)=>{
       return(
         <ul>
           <li>{item.name}</li>
@@ -25,7 +27,7 @@ const App = ()=>{
       )
      })
     } 
-      <button onClick={getFlowers}>Submit</button>
+     
      </div>
   )
 }
